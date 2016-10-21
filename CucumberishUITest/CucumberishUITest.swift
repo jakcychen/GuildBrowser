@@ -24,7 +24,7 @@ class CucumberishUITest: NSObject {
             print("args: \(args)")
             print("userInfo: \(userInfo.debugDescription)")
             
-            application.launch()
+            XCUIApplication().launch()
             
             And("annual interest rate is 0.05") { (args, userInfo) -> Void in
                 //            application.launch()
@@ -48,7 +48,7 @@ class CucumberishUITest: NSObject {
             print("args: \(args)")
             print("userInfo: \(userInfo.debugDescription)")
             
-            application.launch()
+//            application.launch()
             
             And("annual interest rate is 0.05") { (args, userInfo) -> Void in
                 //            application.launch()
