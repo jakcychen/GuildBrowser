@@ -24,7 +24,7 @@ class CucumberishUITest: NSObject {
             print("args: \(args)")
             print("userInfo: \(userInfo.debugDescription)")
             
-            XCUIApplication().launch()
+            application.launch()
             
             And("annual interest rate is 0.05") { (args, userInfo) -> Void in
                 //            application.launch()
@@ -67,7 +67,6 @@ class CucumberishUITest: NSObject {
         }
         
         //Tell Cucumberish the name of your features folder and let it execute them for you...
-//        Cucumberish.executeFeaturesInDirectory("Features", featureTags: nil)
         Cucumberish.executeFeaturesInDirectory("Features", includeTags: nil, excludeTags: nil)
     }
 }
