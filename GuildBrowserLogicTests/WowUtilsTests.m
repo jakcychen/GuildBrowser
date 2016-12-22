@@ -67,8 +67,9 @@
 - (void)testQualityLookup
 {
     XCTAssertEqualObjects(@"Grey", [WoWUtils qualityFromQualityType:1], @"Grey");
-    XCTAssertFalse([@"Purpl" isEqualToString:[WoWUtils qualityFromQualityType:10]], @"Purple");
+    XCTAssertFalse([@"Purple" isEqualToString:[WoWUtils qualityFromQualityType:10]], @"Purple");
     // add the rest as an exercise
+    XCTAssertTrue(false);
 }
 
 
