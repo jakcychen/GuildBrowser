@@ -62,7 +62,7 @@ class CucumberishUITest: NSObject {
             
             Then("balance becomes 2100.00") { (args, userInfo) -> Void in
                 //            application.launch()
-//                            XCTAssertTrue(false)
+                            XCTAssertTrue(false)
             }
         }
         
